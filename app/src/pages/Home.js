@@ -1,4 +1,3 @@
-
 import '.././App.css';
 import homepagepic from './homepagepic.png';
 
