@@ -38,7 +38,7 @@ const Calculator = () => {
     return (
         <div>
             <header className ="calculatorcolor" style={{color: "padding: 128px 16px"}}>
-                <h1 style={{color: "white"}}>Calculator</h1>
+                <h1 style={{color: "white"}}><center>Calculator</center></h1>
             </header>
 
             <div>
