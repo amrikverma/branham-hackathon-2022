@@ -1,25 +1,26 @@
+import React from 'react';
 import './App.css';
-import {useState, useEffect} from 'react'
-import { Navbar } from './Navbar.js'
+import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import Whiteboard from "./pages/Whiteboard";
+import Calculator from "./pages/Calculator";
 
-function App() {
-  const [counter, SetVariable] = useState(0);
-  useEffect(function test() {
-    console.log("The counter is: " + counter);
-  }, [counter]);
-
-  function doOnClick() {
-    SetVariable(counter + 1);
-  }
-
+export default function App() {
   return (
-    <div>
-      <h1>{counter}</h1>
-      <button onClick={doOnClick}> Click me </button>
-      {/* <Navbar/> */}
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="whiteboard" element={<Whiteboard />} />
+          <Route path="calculator" element={<Calculator />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App;
+ReactDOM.render(<App />, document.getElementById("root"));
+
 
