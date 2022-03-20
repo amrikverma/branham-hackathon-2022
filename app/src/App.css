@@ -51,7 +51,7 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: blac;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -59,4 +59,17 @@ li a {
 
 li a:hover {
   background-color: #111;
+}
+
+.homecolor {
+  background: linear-gradient(to bottom, #3262f3 0%, #245b5f 100%);
+  text-align: center;
+}
+
+.calculatorcolor {
+  background: linear-gradient(to bottom, #6137f7 0%, #8f4fd8 75%);
+  text-align: center;
+}
+.navbar {
+  background: white; 
 }

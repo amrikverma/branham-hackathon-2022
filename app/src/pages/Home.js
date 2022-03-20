@@ -1,5 +1,11 @@
 const Home = () => {
-    return <h1><center>Home</center></h1>;
+    return (
+    <div>
+        <header className ="homecolor" style={{color: "padding: 128px 16px"}}>
+            <h1 style={{color: "white"}}>Home</h1>
+        </header>
+    </div>
+    )
   };
   
   export default Home;
