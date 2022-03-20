@@ -1,5 +1,6 @@
 import './App.css';
 import {useState, useEffect} from 'react'
+import { Navbar } from './Navbar.js'
 
 function App() {
   const [counter, SetVariable] = useState(0);
@@ -15,6 +16,7 @@ function App() {
     <div>
       <h1>{counter}</h1>
       <button onClick={doOnClick}> Click me </button>
+      {/* <Navbar/> */}
     </div>
   )
 }
