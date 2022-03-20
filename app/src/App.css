@@ -71,7 +71,21 @@ li a:hover {
 
 .REVIEW_boxContainer{
   border: 3px black solid;
-  border-radius: 50px;
+  border-radius: 30px;
   background-color: #61dafb;
   text-decoration: none;
+}
+
+.REVIEW_titleStyle{
+  text-align: center;
+}
+
+.REVIEW_captionStyle{
+  text-align: center;
+  /* font-family: "cursive"; */
+  font-size: "16px";
+}
+
+.REVIEW_contentStyle{
+  text-align: center;
 }
