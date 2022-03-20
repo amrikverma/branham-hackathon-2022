@@ -68,3 +68,10 @@ li a:hover {
   color:#282c34;
   font-family: Helvetica, sans-serif;
 }
+
+.REVIEW_boxContainer{
+  border: 3px black solid;
+  border-radius: 50px;
+  background-color: #61dafb;
+  text-decoration: none;
+}
