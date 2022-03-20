@@ -1,0 +1,2 @@
+Run this command to make the database work:
+    npx json-server --watch data/db.json --port 8080

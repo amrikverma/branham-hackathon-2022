@@ -1,4 +1,20 @@
-const schoolreviews = () => {
+import { useState, useEffect } from 'react';
+
+
+const schoolreviews = ()=> {
+    const [reviews,updateReview] = useState(null);
+    useEffect(()=>{
+        fetch("http://localhost:8080/allReviews")
+        .then(res=>{
+            return res.json()
+        })
+        .then(data=>{
+            console.log(data)
+            updateReview(data)
+        })
+    }, [])
+
+    
     return (
         <div>
             <h1>Course Reviews!</h1>
