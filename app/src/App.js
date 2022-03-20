@@ -6,6 +6,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Whiteboard from "./pages/Whiteboard";
 import Calculator from "./pages/Calculator";
+import SchoolReview from "./pages/schoolreviews";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="/whiteboard" element={<Whiteboard />} />
           <Route path="/calculator" element={<Calculator />} />
+          <Route path="/schoolreviews" element={<SchoolReview/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
