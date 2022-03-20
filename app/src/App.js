@@ -6,7 +6,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Whiteboard from "./pages/Whiteboard";
 import Calculator from "./pages/Calculator";
-import SchoolReview from "./pages/schoolreviews";
+import SchoolReview from "./pages/Schoolreviews";
 
 export default function App() {
   return (
