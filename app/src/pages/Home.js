@@ -4,23 +4,30 @@ import homepagepic from './homepagepic.png';
 const Home = () => {
     return (
     <div>
-        <header className ="homecolor" style={{padding: "128px 16px"}}>
-            <h1 style={{color: "white"}}>YAMUCATION</h1>
-            <img src={homepagepic} alt="homework pic" />
+        <header className ="homecolor" style={{padding: "5px 16px"}}>
+            <h1 style={{color: "white"}, {fontSize: "50px"}}>YAMUCATION</h1>
+            <img src={homepagepic} height="500px" alt="homework pic" />
         </header>
 
-        <p>
-        Yamucation is a collaborative effort of 3 high school students to help you excell in school.   <br></br>
-        We have all the resources, which will help you succeed and be on your way to your dream college!
-        </p>
-
-        <hr></hr>
-        <p>
-        Our website has different tools you can use. <br></br>
-        Our Whiteboard tab is a place where you can draw or write your different ideas. This can also act as a discrete workspace! <br></br>
-        Our Calculator tab is a simple tool you can use to help you with your math homework. We have a geometric, numerical, and graphing calculator. 
-
-        </p>
+        <div className = "colorContainer2" >
+            Yamucation is a collaborative effort of 3 high school students to help you excell in school. We have all the resources, which will help you succeed and be on your way to your dream college! <br></br>
+            Our website has different tools you can use: 
+            <ul className = "colorContainer1">
+                <li>
+                    <h4>Whiteboard</h4> Our Whiteboard tab is a place where you can draw or write your different ideas. This can also act as a discrete workspace! 
+                </li>
+                <li>
+                    <h4>Calculator</h4> Our Calculator tab is a simple tool you can use to help you with your math homework. We have a geometric, numerical, and graphing calculator.
+                </li>
+                <li>
+                    <h4>School Review</h4> Our School Review has information about college courses and AP class review to help students discover what the best course for them are. 
+                </li>
+                <li>
+                    <h4>Plagarism Checker</h4> Our Plagarism Checker tab helps student check if there is any plagarism in their work to make sure that they don't submit it without paraphrasing or changing the copied text. This ensures that their assignments and work are their own and not somebody else's work!
+                </li>
+            </ul>
+          
+        </div>
 
     </div>
     )

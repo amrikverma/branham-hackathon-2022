@@ -56,3 +56,15 @@ li a:hover {
 .navbar {
   background: white; 
 }
+.colorContainer1 {
+  background:cornflowerblue;
+  text-align: center;
+  color:#282c34;
+  font-family: Helvetica, sans-serif;
+}
+.colorContainer2 {
+  background:dodgerblue;
+  text-align: center;
+  color:#282c34;
+  font-family: Helvetica, sans-serif;
+}
