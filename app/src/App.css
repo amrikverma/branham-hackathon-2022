@@ -66,6 +66,7 @@
   text-align: center;
   color:#282c34;
   font-family: Helvetica, sans-serif;
+
  }
  .colorContainer2 {
   background:dodgerblue;
@@ -73,12 +74,13 @@
   color:#282c34;
   font-family: Helvetica, sans-serif;
  }
-  
+
  .REVIEW_boxContainer{
   border: 3px black solid;
   border-radius: 30px;
   background-color: #61dafb;
   text-decoration: none;
+  max-width:620px;
  }
   
  .REVIEW_titleStyle{
@@ -91,12 +93,18 @@
   font-size: "16px";
  }
   
+.collegeMap{
+  margin-left:25%;
+  width:800px;
+  height:700px;
+}
+
  .REVIEW_contentStyle{
   text-align: center;
 }
 
-.CREATEREVIEW_createContaine{
-  max-width: 420px;
+.CREATEREVIEW_createContainer{
+  max-width: 220px;
   text-align: center;
   display: flex;
   
