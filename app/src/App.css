@@ -92,6 +92,14 @@ li a:hover {
   text-align: center;
 }
 
-.REVIEW_createContainer{
-  align-items: center;
+.CREATEREVIEW_createContaine{
+  max-width: 420px;
+  text-align: center;
+  display: flex;
+  
+}
+
+.REVIEW_buttonCreate{
+  border: 1px black solid;
+  border-radius: 30px;
 }

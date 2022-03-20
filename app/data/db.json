@@ -1,18 +1,25 @@
 {
-    "allReviews": [
-        {
-            "courseName": "Economics 101",
-            "body": "lorem ipsum bing bang i love this school it had the very goo d courses and i would very higly rec. this school to anyone",
-            "author": "Eliab Tedros",
-            "schoolName": "New Mexico Institute of Mining",
-            "id": 1
-        },
-        {
-            "courseName": "Computer Engineering",
-            "body": "very goo d courses and i would very higly rec. this school to anyone",
-            "author": "Mallika Yalangi",
-            "schoolName": "Prospect High School",
-            "id": 2
-        }
-    ]
-  }
+  "allReviews": [
+    {
+      "courseName": "Economics 101",
+      "body": "lorem ipsum bing bang i love this school it had the very goo d courses and i would very higly rec. this school to anyone",
+      "author": "Eliab Tedros",
+      "schoolName": "New Mexico Institute of Mining",
+      "id": 1
+    },
+    {
+      "courseName": "Computer Engineering",
+      "body": "very goo d courses and i would very higly rec. this school to anyone",
+      "author": "Mallika Yalangi",
+      "schoolName": "Prospect High School",
+      "id": 2
+    },
+    {
+      "course": "Hispanic Studies",
+      "body": "this class is amazing!",
+      "author": "David Anzaldo",
+      "school": "Missisipi",
+      "id": 3
+    }
+  ]
+}

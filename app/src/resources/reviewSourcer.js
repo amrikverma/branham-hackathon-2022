@@ -1,10 +1,11 @@
 import '.././App.css';
 import CreateReview from "./CreateReview"
+import { Outlet, Link } from "react-router-dom";
 
 const ReviewSourcer = ({ reviews }) => {
     return (
     <div>
-    <CreateReview />
+    <button><Link to="/makereview">Make a review</Link></button>
       <div style={{marginLeft:"33%"}}>
         {reviews.map(review => (
             <div className="REVIEW_boxContainer" key={review.id} >
