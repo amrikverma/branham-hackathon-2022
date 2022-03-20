@@ -70,10 +70,12 @@ li a:hover {
 }
 
 .REVIEW_boxContainer{
-  border: 3px black solid;
+  border: 3px grey solid;
   border-radius: 30px;
   background-color: #61dafb;
   text-decoration: none;
+  margin-top: 10px;
+  max-width: 500px;
 }
 
 .REVIEW_titleStyle{
@@ -88,4 +90,8 @@ li a:hover {
 
 .REVIEW_contentStyle{
   text-align: center;
+}
+
+.REVIEW_createContainer{
+  align-items: center;
 }
