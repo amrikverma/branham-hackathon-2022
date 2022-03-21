@@ -24,6 +24,7 @@ const CreateReview = () => {
   }
   return (
     <div className="CREATEREVIEW_createContainer">
+      <div className="everythin_else_for_this">
       <h2>Write a new review!</h2>
       <form onSubmit={handleSubmit}>
         <label>Course Name:</label>
@@ -53,8 +54,9 @@ const CreateReview = () => {
             value={school}
             onChange={(e) => setSchool(e.target.value)}
         /><br></br>
-        <button>Add Review</button>
+        <button className="hehe">Add Review</button>
       </form>
+      </div>
     </div>
   );
 }

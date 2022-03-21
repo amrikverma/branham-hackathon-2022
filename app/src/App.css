@@ -135,18 +135,39 @@
   text-align: center;
 }
 
-.CREATEREVIEW_createContainer{
-  max-width: 1440px;
-  height:696px;
+.CREATEREVIEW_createContainer {
+  /* max-width: 1440px; */
+  /* height:696px; */
   text-align: center;
   display: flex;
   background: linear-gradient(to right, #00AAFF, #00FF6C);
-  
+
+}
+
+.everythin_else_for_this {
+  max-width: 1440px;
+  height:696px;
+  margin-left:38%;
+}
+
+.everythin_else_for_this > label {
+  margin-top:"15px";
+}
+
+.everythin_else_for_this > input {
+  margin-top: "15px";
+}
+
+.hehe{
+  background-color: green;
+  border: 1px black solid;
+  border-radius: 30px;
+  margin-top: 15px;
 }
 
 .REVIEW_buttonCreate{
   border: 1px black solid;
-  
+
   border-radius: 30px;
 }
  /*calculator css-Tyler Potts*/
