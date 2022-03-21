@@ -232,7 +232,8 @@
   
   
 .graphingCalculator{
-  margin-left: 10%;
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+  text-align: center;
   height:1000px;
   width:1200px;
 }
