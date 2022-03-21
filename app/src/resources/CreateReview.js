@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { useHistory } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 const CreateReview = () => {
   const [course, setCourse] = useState('');
   const [body, setBody] = useState('');
   const [school, setSchool]=useState('');
   const [author, setAuthor] = useState('');
-  const history=useHistory();
+  const navigate=useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ const CreateReview = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(review)
     }).then(() => {
-      history.go(-1)
+      navigate('/schoolreviews')
     })
   }
   return (
