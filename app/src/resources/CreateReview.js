@@ -17,7 +17,7 @@ const CreateReview = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(review)
     }).then(() => {
-  
+      history.go(-1)
     })
   }
   return (
