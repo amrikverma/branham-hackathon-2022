@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import ReviewSourcer from "../resources/reviewSourcer";
 
 
-const Schoolreview = ()=> {
+const Schoolreviews = ()=> {
     const [reviews,updateReview] = useState(null);
     useEffect(()=>{
         fetch("http://localhost:8080/allReviews")
@@ -32,4 +32,4 @@ const Schoolreview = ()=> {
     );
 }
  
-export default Schoolreview;
+export default Schoolreviews;
