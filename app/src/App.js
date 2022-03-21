@@ -8,6 +8,7 @@ import Whiteboard from "./pages/Whiteboard";
 import Calculator from "./pages/Calculator";
 import SchoolReviews from "./pages/Schoolreviews";
 import CreateReview from './resources/CreateReview';
+import Footer from "./pages/Footer";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/makereview" element={<CreateReview/>}/>
         </Route>
       </Routes>
+      <Footer></Footer>
     </BrowserRouter>
   );
 }
