@@ -89,7 +89,7 @@ const Calculator = () => {
  
        </div>
 
-       <iframe src="https://www.desmos.com/calculator" title="GraphingCalculator"></iframe>
+       <iframe src="https://www.desmos.com/calculator" title="GraphingCalculator" className="graphingCalculator"></iframe>
 
 
 

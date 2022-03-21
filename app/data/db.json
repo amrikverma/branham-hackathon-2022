@@ -6,6 +6,13 @@
       "author": "Test User",
       "school": "Branham High School",
       "id": 1
+    },
+    {
+      "course": "AP Computer Science",
+      "body": "i absowutely wove this cwass",
+      "author": "Joe Guyon",
+      "school": "Prospect High School",
+      "id": 2
     }
   ]
 }
