@@ -51,11 +51,11 @@
  }
   
  li a:hover {
-  background-color:dimgrey;
+  background-color: lightgray;
  }
   
  .homecolor {
-  background: linear-gradient(to bottom, #3262f3 0%, #245b5f 100%);
+  background: linear-gradient(to bottom, #3262f3 0%, #43b8c0 100%);
   text-align: center;
  }
   
@@ -65,12 +65,12 @@
  }
 
  .whiteboardcolor {
-  background: linear-gradient(to bottom, orange 0%, blue 75%);
+  background: linear-gradient(to bottom, rgb(202, 137, 16) 0%, rgb(255, 203, 106) 75%);
   text-align: center;
  }
 
  .schoolreviewcolor {
-  background: linear-gradient(to bottom, lightgreen 0%, lightblue 75%);
+  background: linear-gradient(to bottom, rgb(221, 24, 24) 0%, rgb(252, 133, 133) 75%);
   text-align: center;
  }
 

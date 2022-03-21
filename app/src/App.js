@@ -11,17 +11,19 @@ import CreateReview from './resources/CreateReview';
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/whiteboard" element={<Whiteboard />} />
-          <Route path="/calculator" element={<Calculator />} />
-          <Route path="/schoolreviews" element={<SchoolReviews/>}/>
-          <Route path="/makereview" element={<CreateReview/>}/>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/whiteboard" element={<Whiteboard />} />
+            <Route path="/calculator" element={<Calculator />} />
+            <Route path="/schoolreviews" element={<SchoolReviews/>}/>
+            <Route path="/makereview" element={<CreateReview/>}/>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
