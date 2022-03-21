@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import ReviewSourcer from "../resources/reviewSourcer";
+import ReviewSourcer from "../resources/ReviewSourcer";
 
 
 const Schoolreviews = ()=> {
