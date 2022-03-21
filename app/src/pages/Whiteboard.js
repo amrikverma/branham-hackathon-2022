@@ -6,7 +6,7 @@ const Whiteboard = () => {
     return (
     <div>
         <header className ="whiteboardcolor" style={{color: "padding: 128px 16px"}}>
-               <h1 style={{color: "white"}}><center>Whiteboard</center></h1>
+               <h1 style={{color: "black"}}><center>Whiteboard</center></h1>
         </header>
 
         <Container/>
