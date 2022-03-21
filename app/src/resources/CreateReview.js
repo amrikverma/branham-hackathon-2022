@@ -24,6 +24,7 @@ const CreateReview = () => {
   }
   return (
     <div className="CREATEREVIEW_createContainer">
+      <div className="everythin_else_for_this">
       <h2>Write a new review!</h2>
       <form onSubmit={handleSubmit}>
         <label>Course Name:</label>
@@ -33,13 +34,13 @@ const CreateReview = () => {
           value={course}
           onChange={(e) => setCourse(e.target.value)}
         /><br></br>
-        <label>Blog body:</label>
+        <label>Your Review:</label>
         <textarea
           required
           value={body}
           onChange={(e) => setBody(e.target.value)}
         ></textarea><br></br>
-        <label>Blog author:</label>
+        <label>Author:</label>
         <input 
             type="text" 
             required 
@@ -53,8 +54,9 @@ const CreateReview = () => {
             value={school}
             onChange={(e) => setSchool(e.target.value)}
         /><br></br>
-        <button>Add Review</button>
+        <button className="hehe">Add Review</button>
       </form>
+      </div>
     </div>
   );
 }
