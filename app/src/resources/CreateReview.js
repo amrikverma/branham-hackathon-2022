@@ -34,13 +34,13 @@ const CreateReview = () => {
           value={course}
           onChange={(e) => setCourse(e.target.value)}
         /><br></br>
-        <label>Blog body:</label>
+        <label>Your Review:</label>
         <textarea
           required
           value={body}
           onChange={(e) => setBody(e.target.value)}
         ></textarea><br></br>
-        <label>Blog author:</label>
+        <label>Author:</label>
         <input 
             type="text" 
             required 
