@@ -121,9 +121,11 @@
 }
 
 .CREATEREVIEW_createContainer{
-  max-width: 220px;
+  max-width: 1440px;
+  height:696px;
   text-align: center;
   display: flex;
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
   
 }
 
@@ -218,3 +220,4 @@
   height:1000px;
   width:1200px;
 }
+
