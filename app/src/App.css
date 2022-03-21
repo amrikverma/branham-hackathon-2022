@@ -59,6 +59,17 @@
   background: linear-gradient(to bottom, #6137f7 0%, #8f4fd8 75%);
   text-align: center;
  }
+
+ .whiteboardcolor {
+  background: linear-gradient(to bottom, orange 0%, blue 75%);
+  text-align: center;
+ }
+
+ .schoolreviewcolor {
+  background: linear-gradient(to bottom, lightgreen 0%, lightblue 75%);
+  text-align: center;
+ }
+
  .navbar {
   background: white;
  }
