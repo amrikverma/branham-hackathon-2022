@@ -83,6 +83,7 @@
   max-width:620px;
   margin-top:15px;
   margin-bottom:15px;
+  text-align: center;
  }
   
  .REVIEW_titleStyle{
@@ -104,7 +105,7 @@
   background-color: #00FF6C;
   border: 3px white solid;
   border-radius: 40px;
-  margin-left: 45%;
+  text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
