@@ -54,7 +54,7 @@ const Calculator = () => {
  
  
    return (
-       <div>
+       <div className ="calculatorcolor">
            <header className ="calculatorcolor" style={{color: "padding: 128px 16px"}}>
                <h1 style={{color: "white"}}><center>Calculator</center></h1>
            </header>
@@ -88,7 +88,6 @@ const Calculator = () => {
           </div>
  
        </div>
-
        <iframe src="https://www.desmos.com/calculator" title="GraphingCalculator" height="1000px" width="1200px" className="graphingCalculator"></iframe>
 
 
