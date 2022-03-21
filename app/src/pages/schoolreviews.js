@@ -17,7 +17,7 @@ const Schoolreviews = ()=> {
 
     
     return (
-        <div>
+        <div className="BRO_WHAT_IS_THIS">
             <h1>Course Reviews!</h1>
             <p>Read reviews made by other students who are taking or taken the course which you have questions on!</p>
 
