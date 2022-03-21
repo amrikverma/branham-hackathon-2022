@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+
+
 .App {
   text-align: center;
   display: flex;
@@ -148,6 +152,7 @@
   
  body{
   background-color: var(--light);
+  font-family:"Rajdhani"
  }
   
   
