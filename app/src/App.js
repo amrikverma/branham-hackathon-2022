@@ -12,7 +12,6 @@ import Footer from "./pages/Footer";
 
 export default function App() {
   return (
-<<<<<<< HEAD
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -25,21 +24,6 @@ export default function App() {
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
-=======
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="/whiteboard" element={<Whiteboard />} />
-            <Route path="/calculator" element={<Calculator />} />
-            <Route path="/schoolreviews" element={<SchoolReviews/>}/>
-            <Route path="/makereview" element={<CreateReview/>}/>
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
->>>>>>> 46b4465383896be11d305b09292545a8f2e78bac
   );
 }
 
