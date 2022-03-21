@@ -1,13 +1,18 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+ }
+  
+ .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-.App-header {
+ }
+  
+ .App-header {
   background-color: #282c34;
   /* min-height: 100vh; */
   display: flex;
@@ -16,62 +21,194 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
+ }
+  
+ .App-link {
   color: #61dafb;
-}
-
-ul {
+ }
+  
+ ul {
   list-style-type: none;
   overflow: hidden;
   background-color: white;
-}
-
-li {
+ }
+  
+ li {
   float: left;
-}
-
-li a {
+ }
+  
+ li a {
   display: block;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-
-li a:hover {
+ }
+  
+ li a:hover {
   background-color:dimgrey;
-}
-
-.homecolor {
+ }
+  
+ .homecolor {
   background: linear-gradient(to bottom, #3262f3 0%, #245b5f 100%);
   text-align: center;
-}
-
-.calculatorcolor {
+ }
+  
+ .calculatorcolor {
   background: linear-gradient(to bottom, #6137f7 0%, #8f4fd8 75%);
   text-align: center;
-}
-.navbar {
-  background: white; 
-}
-.colorContainer1 {
+ }
+ .navbar {
+  background: white;
+ }
+ .colorContainer1 {
   background:cornflowerblue;
   text-align: center;
   color:#282c34;
   font-family: Helvetica, sans-serif;
-}
-.colorContainer2 {
+
+ }
+ .colorContainer2 {
   background:dodgerblue;
   text-align: center;
   color:#282c34;
   font-family: Helvetica, sans-serif;
-}
+ }
 
-.REVIEW_boxContainer{
+ .REVIEW_boxContainer{
   border: 3px black solid;
-  border-radius: 50px;
+  border-radius: 30px;
   background-color: #61dafb;
   text-decoration: none;
+  max-width:620px;
+  margin-top:5px;
+  margin-bottom:5px;
+ }
+  
+ .REVIEW_titleStyle{
+  text-align: center;
+ }
+  
+ .REVIEW_captionStyle{
+  text-align: center;
+  /* font-family: "cursive"; */
+  font-size: "16px";
+ }
+  
+.BRO_WHAT_IS_THIS{
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
 }
+
+.go_to_create_review_button{
+  background-color: #00FF6C;
+  border: 3px white solid;
+  border-radius: 40px;
+  margin-left: 45%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.collegeMap{
+  margin-left:25%;
+  width:800px;
+  height:701px;
+}
+
+ .REVIEW_contentStyle{
+  text-align: center;
+}
+
+.CREATEREVIEW_createContainer{
+  max-width: 220px;
+  text-align: center;
+  display: flex;
+  
+}
+
+.REVIEW_buttonCreate{
+  border: 1px black solid;
+  border-radius: 30px;
+}
+ /*calculator css-Tyler Potts*/
+ :root{
+   --primary: #d81e5b;
+   --secondary: #8c38ff;
+   --dark: #131a26;
+   --light: #eee;
+ }
+  
+ *{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+ }
+  
+ body{
+  background-color: var(--light);
+ }
+  
+  
+  
+ .calculator{
+  width:100%;
+  max-width: 400px;
+  background-color: #FFF;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px rgba(0,0,0,0.2);
+ }
+  
+ .display{
+  padding: 16px;
+  text-align: right;
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 300;
+  }
+  
+ .display span {
+  font-size: 14px;
+  color: #888;
+ }
+  
+ button{
+  appearance: none;
+  border:  none;
+  outline:  none;
+  color: #FFF;
+  font-size: 20px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+ }
+  
+ button:hover{
+  opacity: 0.9;
+ }
+  
+ .operators{
+  display: flex;
+ }
+  
+ .operators button{
+  flex: 1 1 0%;
+  background-color: var(--primary);
+  font-weight: 700;
+  
+ }
+  
+ .digits{
+  display: flex;
+  flex-wrap: wrap;
+ }
+  
+ .digits button{
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  background-color: var(--dark);
+  
+ }
+  
+  
+ 

@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Whiteboard from "./pages/Whiteboard";
 import Calculator from "./pages/Calculator";
 import SchoolReview from "./pages/Schoolreviews";
+import CreateReview from './resources/CreateReview';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/whiteboard" element={<Whiteboard />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/schoolreviews" element={<SchoolReview/>}/>
+          <Route path="/makereview" element={<CreateReview/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,55 +1,95 @@
 import { useState } from 'react';
 import '.././App.css';
-
+ 
 const Calculator = () => {
-    const [a, setA]=useState(0);
-    const [b, setB]=useState(0);
-    const [c, setC]=useState(0);
-    const[area, setArea]=useState(0);
-
-    function getBase1(val){
-        setA(val.target.value);
-        setArea(((a+b)* c)/2);
-        if(area>0){
-            console.log(area);
-
-        }
-    }
-
-    function getBase2(val){
-        setB(val.target.value);
-        setArea(((a+b)* c)/2);
-
-        if(area>0){
-            console.log(area);
-        }
-    }
-
-    function getHeight(val){
-        setC(val.target.value);
-        setArea(((a+b)* c)/2);
-
-        if(area>0){
-            console.log(area);
-        }
-    }
-
-
-    return (
-        <div>
-            <header className ="calculatorcolor" style={{color: "padding: 128px 16px"}}>
-                <h1 style={{color: "white"}}><center>Calculator</center></h1>
-            </header>
-
-            <div>
-                <h3>a</h3>
-                <input type="text" onChange={getBase1}>Enter base</input>
-                <input type="text" onChange={getBase2}>Enter base</input>
-                <input type="text" onChange={getHeight}>Enter height</input>
-            </div>
-
-        </div>
-    )
+ 
+   const [calc, setCalc]=useState("");
+   const [result, setResult]=useState("");
+ 
+   const ops=['÷', '*', '+', '-', '.'];
+ 
+   const updateCalc= value => {
+ 
+       if(
+           ops.includes(value)&&calc===''||
+           ops.includes(value) && ops.includes(calc.slice(-1))
+       ){
+           return;
+       }
+ 
+ 
+       setCalc(calc+value);
+ 
+       if(!ops.includes(value)){
+           setResult(eval(calc+value).toString())
+       }
+   }
+  
+   const createDigits = () =>{
+       const digits=[];
+ 
+       for(let i=1; i<10; i++){
+           digits.push(
+               <button onClick={()=>updateCalc(i.toString())} key={i}>{i}</button>
+           )
+       }
+ 
+       return digits;
+   }
+ 
+   const calculate=()=>{
+       setCalc(eval(calc).toString());
+   }
+ 
+   const deleteLast=()=>{
+       if(calc==''){
+          
+           return;
+       }
+ 
+       const value=calc.slice(0, -1);
+ 
+       setCalc(value);
+   }
+ 
+ 
+   return (
+       <div>
+           <header className ="calculatorcolor" style={{color: "padding: 128px 16px"}}>
+               <h1 style={{color: "white"}}><center>Calculator</center></h1>
+           </header>
+ 
+           <div className="App">
+ 
+          
+ 
+          <div className="calculator">
+              <div className="display">
+                  {result ? <span>({result})</span> : ''}
+                  { calc || "0" }
+              </div>
+ 
+              <div className="operators">
+                  <button onClick={()=>updateCalc('÷')}>÷</button>
+                  <button onClick={()=>updateCalc('*')}>*</button>
+                  <button onClick={()=>updateCalc('+')}>+</button>
+                  <button onClick={()=>updateCalc('-')}>-</button>
+ 
+                  <button onClick={deleteLast}>DEL</button>
+              </div>
+ 
+              <div className="digits">
+                  { createDigits() }
+                  <button onClick={()=>updateCalc('0')}>0</button>
+                  <button onClick={()=>updateCalc('.')}>.</button>
+                  <button onClick={calculate}>=</button>
+ 
+              </div>
+          </div>
+ 
+       </div>
+       </div>
+   )
 }
-
-  export default Calculator;
+ 
+ export default Calculator;
