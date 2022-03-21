@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom"
 
 const CreateReview = () => {
   const [course, setCourse] = useState('');
   const [body, setBody] = useState('');
   const [school, setSchool]=useState('');
   const [author, setAuthor] = useState('');
+  const history=useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
