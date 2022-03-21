@@ -6,7 +6,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Whiteboard from "./pages/Whiteboard";
 import Calculator from "./pages/Calculator";
-import SchoolReview from "./pages/Schoolreviews";
+import SchoolReview from "./pages/Schoolreview";
 import CreateReview from './resources/CreateReview';
 
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="/whiteboard" element={<Whiteboard />} />
           <Route path="/calculator" element={<Calculator />} />
-          <Route path="/schoolreviews" element={<SchoolReview/>}/>
+          <Route path="/schoolreview" element={<SchoolReview/>}/>
           <Route path="/makereview" element={<CreateReview/>}/>
         </Route>
       </Routes>
