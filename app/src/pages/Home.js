@@ -17,14 +17,12 @@ const Home = () => {
                     <h4>Whiteboard</h4> Our Whiteboard tab is a place where you can draw or write your different ideas. This can also act as a discrete workspace! 
                 </li>
                 <li>
-                    <h4>Calculator</h4> Our Calculator tab is a simple tool you can use to help you with your math homework. We have a geometric, numerical, and graphing calculator.
+                    <h4>Calculator</h4> Our Calculator tab is a simple tool you can use to help you with your math homework. We have both numerical and graphing calculators.
                 </li>
                 <li>
                     <h4>School Review</h4> Our School Review has information about college courses and AP class review to help students discover what the best course for them are. 
                 </li>
-                <li>
-                    <h4>Plagarism Checker</h4> Our Plagarism Checker tab helps student check if there is any plagarism in their work to make sure that they don't submit it without paraphrasing or changing the copied text. This ensures that their assignments and work are their own and not somebody else's work!
-                </li>
+               
             </ul>
           
         </div>
